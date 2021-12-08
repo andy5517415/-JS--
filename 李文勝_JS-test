@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS_test</title>
+</head>
+<body>
+<html> 
+<body> 
+<script type="text/javascript"> 
+const BR1 = ["John", "Alice", "Bob", "Jessie", "Karen"];
+const BR2 = ["Jessie", "Karen", "John"];
+const BR3 = ["Miles", "Eric", "Henry", "Bob"];
+const BR4 = [];
+
+var quiz=prompt("輸入數字1-3選擇題目","");
+
+//1. Count Employees Number by Factory 按工廠統計員工人數
+if (quiz==1) {
+  var Employees_Count=prompt("Enter factory name 輸入工廠(BR1-BR4)統計員工人數","");
+
+  if(Employees_Count=="BR1") {
+    alert(BR1.length);
+  }
+  else if (Employees_Count=="BR2") {
+    alert(BR2.length);
+  }
+  else if (Employees_Count=="BR3") {
+    alert(BR3.length);
+  }
+  else if (Employees_Count=="BR4") {
+    alert(BR4.length);
+  }
+}
+//3.Order employees list by alphabetical order 按字母順序排列員工列表
+else if (quiz==3) {
+  var Employees_Count=prompt("Enter factory name 輸入工廠(BR1-BR4)會按字母順序排列員工列表","");
+  if(Employees_Count=="BR1") {
+      alert(BR1.sort());
+    }
+    else if (Employees_Count=="BR2") {
+      alert(BR2.sort());
+    }
+    else if (Employees_Count=="BR3") {
+      alert(BR3.sort());
+    }
+    else if (Employees_Count=="BR4") {
+      alert(BR4.sort());
+    }
+}
+</script> 
+</body> 
+</html>
