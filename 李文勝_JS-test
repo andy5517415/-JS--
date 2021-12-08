@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>JS_test</title>
-</head>
-<body>
-<html> 
+</head> 
 <body> 
 <script type="text/javascript"> 
 const BR1 = ["John", "Alice", "Bob", "Jessie", "Karen"];
@@ -32,6 +30,32 @@ if (quiz==1) {
     alert(BR4.length);
   }
 }
+
+//2. Count Factories Number by Employee 按員工計算工廠數量
+else if (quiz==2) {
+  var Employees_Count=prompt("Enter Employee name 輸入員工姓名，會按員工計算工廠數量","");
+  var sum = 0;
+  B1=BR1.indexOf(Employees_Count);
+  if (B1>=0) {
+    sum++;
+  }
+  B1=BR2.indexOf(Employees_Count);
+  if (B1>=0) {
+    sum++;
+  }
+  B1=BR3.indexOf(Employees_Count);
+  if (B1>=0) {
+    sum++;
+  }
+  B1=BR4.indexOf(Employees_Count);
+  if (B1>=0) {
+    sum++;
+  }
+
+alert(sum);
+}
+
+
 //3.Order employees list by alphabetical order 按字母順序排列員工列表
 else if (quiz==3) {
   var Employees_Count=prompt("Enter factory name 輸入工廠(BR1-BR4)會按字母順序排列員工列表","");
